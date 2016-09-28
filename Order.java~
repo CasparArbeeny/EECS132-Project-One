@@ -1,3 +1,14 @@
 public class Order extends Object {
  
+  // Stores the symbol of the stock being traded.
+  private char stockSymbol;
+  
+  // Stores the number of shares in the order.
+  private int shares;
+  
+  // Stores the price of the stock
+  private double price;
+  
+  // Stores whether or not we can only trade all of the shares of the order.
+  private boolean allOrNone;
 }
