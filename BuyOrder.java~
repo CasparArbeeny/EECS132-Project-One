@@ -1,2 +1,2 @@
-Public class BuyOrder extends Order {
+public class BuyOrder extends Order {
 }

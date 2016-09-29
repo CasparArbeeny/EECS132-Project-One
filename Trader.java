@@ -1,5 +1,3 @@
-
-
 public class Trader extends  Object {
   
   // Stores the name of the trader

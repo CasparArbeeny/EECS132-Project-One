@@ -1,4 +1,4 @@
-public class Order extends Trader {
+public class Order extends Object {
  
   // Stores the symbol of the stock being traded.
   private final char stockSymbol;
@@ -11,9 +11,11 @@ public class Order extends Trader {
   
   // Stores whether or not we can only trade all of the shares of the order.
   private boolean allOrNone;
+ 
+  private Trader trader;
   
   public Order(char stockSymbol, int shares, double price, boolean allOrNone, String trader) {
-   super(trader);
+   this.trader = new Trader(trader);
    this.stockSymbol = stockSymbol;
    setNumberShares(shares);
    setPrice(price);
@@ -53,5 +55,10 @@ public class Order extends Trader {
   // Takes a boolean and sets if all the shares of a stock need to be traded
   public void setAllOrNone(boolean allOrNone) {
     this.allOrNone = allOrNone;
+  }
+  
+  // 
+  public Trader getTrader() {
+    return this.trader;
   }
 }
