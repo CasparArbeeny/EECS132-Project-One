@@ -1,10 +1,15 @@
+/* Caspar Arbeeny cma85
+ * A Class that represents a trader, or someone who can buy and sell stocks. The trader has a name and a balance 
+ * which can be changed.
+ */
+
 public class Trader extends  Object {
   
   // Stores the name of the trader
   private String name;
   
   // Stores the amount of money the trader has access to.
-  private double balance;
+  private double balance = 0.0 ;
  
   // A constructor that takes a single string and sets it as the trader's name.
   public Trader(String name) {

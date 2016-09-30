@@ -1,3 +1,7 @@
+/* Caspar Arbeeny cma85 
+ * A class that represents an order for a stock. The Order has a trader making a stock, a stock symbol, a price, 
+ * a number of shares being traded, and a indicator whether you need to trade all of the stocks or only some of them.
+*/
 public class Order extends Object {
  
   // Stores the symbol of the stock being traded.
@@ -12,8 +16,10 @@ public class Order extends Object {
   // Stores whether or not we can only trade all of the shares of the order.
   private boolean allOrNone;
  
+  // Stores the location in memory of the trader conducting the order.
   private Trader trader;
   
+  // A constructor for the class that requires 5 inputs that set all of the above variables. 
   public Order(char stockSymbol, int shares, double price, boolean allOrNone, String trader) {
    this.trader = new Trader(trader);
    this.stockSymbol = stockSymbol;
